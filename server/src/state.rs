@@ -1,4 +1,4 @@
-use server::{PanelDefinition, PanelHash};
+use server::PanelHash;
 
 pub struct AppState {
     pub cangrid_uri: String,

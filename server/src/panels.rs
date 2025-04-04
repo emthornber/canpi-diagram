@@ -1,11 +1,10 @@
 use itertools::Itertools;
-use log;
 use std::fs::File;
 use std::io::prelude::*;
 use std::path::{Path, PathBuf};
 
 use crate::errors::CanPiAppError;
-use server::{PanelHash, PanelList};
+use server::PanelHash;
 
 fn create_html_file<P: AsRef<Path>>(format_file: P) -> std::io::Result<File> {
     let mut html_file = PathBuf::from(format_file.as_ref());

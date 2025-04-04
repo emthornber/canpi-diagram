@@ -1,10 +1,7 @@
 use actix_files as fs;
 use actix_web::{web, App, HttpServer};
 use dotenv::dotenv;
-use futures::{sink::SinkExt, stream::StreamExt};
-use glob::glob;
 use simple_logger::SimpleLogger;
-use std::str::FromStr;
 use std::{collections::HashMap, path::Path, process, sync::Mutex};
 use tera::{from_value, to_value, Function, Tera, Value};
 use time::macros::format_description;

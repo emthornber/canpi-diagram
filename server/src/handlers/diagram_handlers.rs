@@ -1,12 +1,9 @@
 use actix_web::{web, Error, HttpResponse, Result};
-use serde::{Deserialize, Serialize};
-use std::collections::BTreeMap;
 use std::sync::Mutex;
 
 use crate::errors::CanPiAppError;
 // use crate::models::{EditFilterForm, FilterNameText};
 use crate::state::AppState;
-use crate::validation::*;
 
 pub async fn status_diagram(
     app_state: web::Data<Mutex<AppState>>,
