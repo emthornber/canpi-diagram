@@ -1,3 +1,11 @@
+[package]
+version = 
+edition = "2021"name = "canpi-diagram"
+
+[dependencies]
+serde = { version = "1.0.219", features = ["derive"] }
+rand = "0.8.5"
+
 [workspace]
 members = ["server", "yewfe"]
 resolver = "2"
